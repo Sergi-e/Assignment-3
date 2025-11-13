@@ -10,33 +10,7 @@ public class SportsEvent implements Event, SportsHandler {
     private String sportType;
 
     //setters
-    
-    //getters
-    public String getName() {
-        return name;
-    }
-    public String getLocation() {
-        return location;
-    }
-    public String getDate() {
-        return date;
-    }
-    public String getTime() {
-        return time;
-    }
-    public double getDuration() {
-        return duration;
-    }
-    public String getTeam1() {
-        return team1;
-    }
-    public String getTeam2() {
-        return team2;
-    }
-    public String getSportType() {
-        return sportType;
-    }
-
+    //setters
     public void setName(String name) {
         this.name = name;
     }
@@ -68,10 +42,43 @@ public class SportsEvent implements Event, SportsHandler {
     public void setSportType(String sportType) {
         this.sportType = sportType;
     }
-    @override
-    public String toString(){
-        
+    //getters
+    public String getName() {
+        return name;
     }
+    public String getLocation() {
+        return location;
+    }
+    public String getDate() {
+        return date;
+    }
+    public String getTime() {
+        return time;
+    }
+    public double getDuration() {
+        return duration;
+    }
+    public String getTeam1() {
+        return team1;
+    }
+    public String getTeam2() {
+        return team2;
+    }
+    public String getSportType() {
+        return sportType;
+    }
+    //Overriding toString 
+    @Override
+    public String toString(){
+        return "Event Name:" + name + "\n" +
+               "Location:" + location + "\n" +
+               "Date:" + date + "\n" +
+               "Time:" + time+ "\n" +
+               "Duration:" + duration+ "\n" +
+               "Name of the first team:" + team1 + "\n" +
+               "Event of the second team:" + team2 + "\n" +
+               "The type of sport:" + sportType + "\n";
+             }
 }
 
 
