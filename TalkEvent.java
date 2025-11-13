@@ -66,5 +66,16 @@ public class TalkEvent implements TalkHandler, Event {
     public void setEventAbstract(String eventAbstract) {
         this.eventAbstract = eventAbstract;
     }
-    
+    //toString method
+    @Override
+    public String toString(){
+       return "Event Name:" + name + "\n" +
+               "Location:" + location + "\n" +
+               "Date:" + date + "\n" +
+               "Time:" + time+ "\n" +
+               "Duration:" + duration+ "\n" +
+               "Name of Speaker:" + speakerName + "\n" +
+               "Event Abstract:" + eventAbstract+ "\n";
+             }
 }
+
