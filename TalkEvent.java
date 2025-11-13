@@ -7,8 +7,20 @@ public class TalkEvent implements TalkHandler, Event {
     private double duration;
     private String speakerName;
     private String eventAbstract;
-    //getters 
 
+    //constructor for initializing the object 
+    public TalkEvent(String name, String location, String date,
+    String time, double duration, String speakerName, String eventAbstract){
+        this.name=name;
+        this.location=location;
+        this.date=date;
+        this.time=time;
+        this.duration=duration;
+        this.speakerName=speakerName;
+        this.eventAbstract=eventAbstract;
+    }
+    
+    //getters 
     @Override
     public String getName() {
         return name;

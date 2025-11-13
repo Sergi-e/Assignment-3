@@ -7,6 +7,18 @@ public class RecruitmentEvent implements RecruitHandler, Event{
     private double duration;
     private String company;
     private String position;
+    
+    //constructor added for initilizing the object 
+    public RecruitmentEvent(String name, String location, String date, String time,
+    double duration, String company, String position){
+        this.name=name;
+        this.location=location;
+        this.date=date;
+        this.time=time;
+        this.duration=duration;
+        this.company=company;
+        this.position=position;
+    }
 
     //getters 
     @Override

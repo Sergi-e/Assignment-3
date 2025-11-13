@@ -7,6 +7,17 @@ public class PartyEvent implements PartyHandler, Event{
     private double duration;
     private String theme;
     private String dressCode;
+
+    //constructor for initialising the object 
+    public PartyEvent(String name, String location, String date, String time,
+    double duration, String theme){
+        this.name=name;
+        this.location=location;
+        this.date=date;
+        this.time=time;
+        this.duration=duration;
+        this.theme=theme;
+    }
     
     //getters
     @Override

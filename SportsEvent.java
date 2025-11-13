@@ -8,8 +8,19 @@ public class SportsEvent implements SportsHandler, Event {
     private String team1;
     private String team2;
     private String sportType;
-
-    //setters
+    
+    //constructor for initializing the object
+    public SportsEvent(String name, String location, String date, String time, double duration,
+    String team1, String team2, String sportType){
+        this.name=name;
+        this.location=location;
+        this.date=date;
+        this.time=time;
+        this.duration=duration;
+        this.team1=team1;
+        this.team2=team2;
+        this.sportType=sportType;
+    }
     //setters
     public void setName(String name) {
         this.name = name;
