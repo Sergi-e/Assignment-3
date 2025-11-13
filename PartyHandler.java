@@ -1,5 +1,5 @@
 public interface PartyHandler {
-    String getPartyTheme();
-    String getPartyDescription();
+    String getTheme();
+    String getDressCode();
     String toString();
 }
