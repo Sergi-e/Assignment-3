@@ -98,6 +98,7 @@ public class Driver {
 
         //Displaying events
         System.out.println("-----Here is the calendar for Ashesi Events------");
+        System.out.println("  ");
         for(Object event: allEventsList){
             System.out.println(event.toString());
             System.out.println("------------------------");
