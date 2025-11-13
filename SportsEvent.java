@@ -1,5 +1,5 @@
 //The class SportsEvent
-public class SportsEvent implements Event, SportsHandler {
+public class SportsEvent implements SportsHandler, Event {
     private String name;
     private String location;
     private String date;
@@ -43,27 +43,35 @@ public class SportsEvent implements Event, SportsHandler {
         this.sportType = sportType;
     }
     //getters
+    @Override
     public String getName() {
         return name;
     }
+    @Override
     public String getLocation() {
         return location;
     }
+    @Override
     public String getDate() {
         return date;
     }
+    @Override
     public String getTime() {
         return time;
     }
+    @Override
     public double getDuration() {
         return duration;
     }
+    @Override
     public String getTeam1() {
         return team1;
     }
+    @Override
     public String getTeam2() {
         return team2;
     }
+    @Override
     public String getSportType() {
         return sportType;
     }

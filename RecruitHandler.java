@@ -1,5 +1,5 @@
 public interface RecruitHandler {
-    String getCompanyName();
-    String getRecruitmentDetails();
+    String getCompany();
+    String getPosition();
     String toString();
 }
