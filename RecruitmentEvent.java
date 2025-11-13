@@ -9,24 +9,31 @@ public class RecruitmentEvent implements RecruitHandler, Event{
     private String position;
 
     //getters 
+    @Override
     public String getName() {
         return name;
     }
+     @Override
     public String getLocation() {
         return location;
     }
+     @Override
     public String getDate() {
         return date;
     }
+     @Override
     public String getTime() {
         return time;
     }
+     @Override
     public double getDuration() {
         return duration;
     }
+     @Override
     public String getCompany() {
         return company;
     }
+     @Override
     public String getPosition() {
         return position;
     }
