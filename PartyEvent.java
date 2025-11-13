@@ -74,7 +74,8 @@ public class PartyEvent implements PartyHandler, Event{
                "Date:" + date + "\n" +
                "Time:" + time+ "\n" +
                "Duration:" + duration+ "\n" +
-               "Party Theme:" + theme+ "\n";
+               "Party Theme:" + theme+ "\n" +
+               "Dress code:" + dressCode +"\n";
             }
 }
 
