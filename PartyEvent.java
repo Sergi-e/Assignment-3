@@ -10,13 +10,14 @@ public class PartyEvent implements PartyHandler, Event{
 
     //constructor for initialising the object 
     public PartyEvent(String name, String location, String date, String time,
-    double duration, String theme){
+    double duration, String theme, String dressCode){
         this.name=name;
         this.location=location;
         this.date=date;
         this.time=time;
         this.duration=duration;
         this.theme=theme;
+        this.dressCode=dressCode;
     }
     
     //getters
