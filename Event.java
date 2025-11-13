@@ -6,4 +6,5 @@ public interface Event{
     String getDate();
     String getTime();
     double getDuration();
+    String toString();
   }
